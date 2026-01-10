@@ -20,8 +20,7 @@ export default function Platform() {
     <section className="relative py-32">
       <Container>
         <div className="grid gap-20 lg:grid-cols-2 items-center">
-          
-          {/* Left text */}
+       
           <div>
             <h2 className="text-5xl font-extrabold leading-tight">
               One Platform.<br />
@@ -34,7 +33,6 @@ export default function Platform() {
             </p>
           </div>
 
-          {/* Right panels */}
           <div className="space-y-6">
             {capabilities.map((c) => (
               <div
