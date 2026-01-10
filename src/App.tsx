@@ -9,6 +9,7 @@ import Workflow from './components/sections/Workflow'
 import Metrics from './components/sections/Metrics'
 import Testimonials from './components/sections/Testimonials'
 import CTA from './components/sections/CTA'
+import Footer from './components/layout/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,7 +23,7 @@ function App() {
      <Metrics/>
      <Testimonials/>
      <CTA/>
-     
+     <Footer/>
     </>
   )
 }

@@ -1,46 +1,52 @@
 import Container from "../ui/Container";
 
-const capabilities = [
+const items = [
   {
-    title: "Pipeline Visibility",
-    desc: "Track every deal stage with real-time pipeline insights.",
+    title: "Pipeline Intelligence",
+    desc: "Real-time visibility into every deal and stage.",
   },
   {
-    title: "Forecast Accuracy",
-    desc: "Predict revenue using historical data and trends.",
+    title: "Revenue Forecasting",
+    desc: "Accurate forecasts driven by historical data.",
   },
   {
     title: "Team Performance",
-    desc: "Measure rep productivity and conversion metrics.",
+    desc: "Track productivity and conversion metrics.",
   },
 ];
 
 export default function Platform() {
   return (
-    <section className="relative py-32">
+    <section className="bg-slate-950 py-32 text-white">
       <Container>
-        <div className="grid gap-20 lg:grid-cols-2 items-center">
-       
+        <div className="grid gap-16 lg:grid-cols-2 items-center">
+
           <div>
             <h2 className="text-5xl font-extrabold leading-tight">
               One Platform.<br />
-              <span className="text-brand-600">Complete Sales Control.</span>
+              <span className="text-indigo-400">
+                Total Sales Control.
+              </span>
             </h2>
 
-            <p className="mt-8 text-xl text-muted max-w-xl">
-              SellSharp unifies data, insights, and execution into a single
-              sales intelligence platform.
+            <p className="mt-8 max-w-xl text-lg text-slate-300">
+              Everything your revenue team needs — unified,
+              intelligent, and built to scale.
             </p>
           </div>
 
           <div className="space-y-6">
-            {capabilities.map((c) => (
+            {items.map((i) => (
               <div
-                key={c.title}
-                className="rounded-3xl border bg-glass p-8 backdrop-blur-glass shadow-soft"
+                key={i.title}
+                className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl"
               >
-                <h3 className="text-2xl font-semibold">{c.title}</h3>
-                <p className="mt-3 text-muted">{c.desc}</p>
+                <h3 className="text-xl font-semibold">
+                  {i.title}
+                </h3>
+                <p className="mt-2 text-slate-300">
+                  {i.desc}
+                </p>
               </div>
             ))}
           </div>
